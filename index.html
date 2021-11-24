@@ -2,8 +2,14 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<script>
+function myFunction() {
+  document.getElementById("demo_ParagraphChange").innerHTML = "Paragraph changed.";
+}
+</script>
 </head>
 <body>
+	<!-------------------Light Change Start-------------->
 	<h2>My First JavaScript</h2>
 
 <button type="button"
@@ -22,5 +28,13 @@ Click here to display Current Date and Time.</button>
 <img id="myImage" src="img/pic_bulboff.gif" style="width:100px">
 
 <button onclick="document.getElementById('myImage').src='img/pic_bulboff.gif'">Turn off the light</button>
+<!-------------------Light Change End-------------->
+<!-------------------Paragraph Change Start-------------->
+<h2>Demo JavaScript in Head</h2>
+
+<p id="demo_ParagraphChange">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+<!-------------------Paragraph Change End-------------->
 </body>
 </html>	
