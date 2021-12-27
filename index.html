@@ -283,5 +283,30 @@ document.getElementById("demo_map").innerHTML = fruits.get("apples");
 
 <!-------------------JavaScript Map program End-------------->
 
+<!-------------------JavaScript Object Prototype program Start-------------->
+
+<h1>JavaScript Objects</h1>
+
+<p>Using an object constructor:</p>
+
+<p id="demo_prototype"></p>
+
+<script>
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+  this.nationality = "English";
+}
+
+const myFather = new Person("John", "Doe", 50, "blue");
+const myMother = new Person("Sally", "Rally", 48, "green");
+
+document.getElementById("demo_prototype").innerHTML =
+"The nationality of my father is " + myFather.nationality + ". The nationality of my mother is " + myMother.nationality;
+</script>
+<!-------------------JavaScript Object Prototype program End-------------->
+
 </body>
 </html>	
