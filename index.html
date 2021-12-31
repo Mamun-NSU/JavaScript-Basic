@@ -160,10 +160,14 @@ person.firstName + " is " + person.age + " years old.";
 <p>It this example we have used " * " as a separator between the elements:</p>
 
 <p id="demo_arrmethod"></p>
+<p id="demo_ArrSort"></p>
 
 <script>
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 document.getElementById("demo_arrmethod").innerHTML = fruits.join(" * ");
+
+fruits.sort();
+document.getElementById("demo_ArrSort").innerHTML = fruits;
 </script>
 
 
